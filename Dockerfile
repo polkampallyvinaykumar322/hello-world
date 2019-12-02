@@ -3,4 +3,5 @@ From tomcat:8-jre8
 
 # Maintainer 
 MAINTAINER "vnkumar408@gmail.com" 
-COPY /var/lib/jenkins/workspace/pipeline1/webapp.war /usr/local/tomcat/webapps
+WORKDIR /var/lib/jenkins/workspace/pipeline1
+COPY ./webapp.war /usr/local/tomcat/webapps
